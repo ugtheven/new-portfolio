@@ -1,6 +1,6 @@
 @import "../../_variables.scss";
 
-.container {
+.home-container {
   @media (max-width: 768px) {
     padding-top: 84px;
   }
@@ -20,55 +20,64 @@
     justify-content: center;
     align-items: center;
 
-    .logo {
-      height: 128px;
-      width: 128px;
-      margin-bottom: 24px;
-    }
-
-    .title {
-      font-size: 26px;
-      font-weight: 700;
-      margin-bottom: 12px;
-      text-align: center;
-    }
-
-    .subtitle {
-      font-size: 16px;
-      font-weight: 400;
-      margin-bottom: 24px;
-      text-align: center;
-    }
-
-    .socials {
-      width: 72px;
+    .content {
+      height: 100%;
+      
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      padding-bottom: 32px;
 
-      .social-icon {
-        width: 24px;
-        height: 24px;
-        transition: 0.3s ease-in-out;
-        color: $primary-variant;
+      .logo {
+        height: 128px;
+        width: 128px;
+        margin-bottom: 24px;
+      }
 
-        &:hover {
-          color: $primary-color;
+      .title {
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        text-align: center;
+      }
+
+      .subtitle {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+
+      .socials {
+        width: 72px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 32px;
+
+        .social-icon {
+          width: 24px;
+          height: 24px;
+          transition: 0.3s ease-in-out;
+          color: $primary-variant;
+
+          &:hover {
+            color: $primary-color;
+          }
         }
       }
-    }
 
-    .more {
-      height: 24px;
-      width: 24px;
+      .more {
+        height: 24px;
+        width: 24px;
 
-      cursor: pointer;
-      transition: 0.3s ease-in-out;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
 
-      &:hover {
-        opacity: 0.6;
+        &:hover {
+          opacity: 0.6;
+        }
       }
     }
 
@@ -78,7 +87,7 @@
         display: none;
       }
     }
-  
+
     .wave-desktop {
       width: 100%;
       @media (max-width: 768px) {
@@ -86,7 +95,6 @@
       }
     }
   }
-
 
   .about-me {
     @media (max-width: 768px) {
@@ -99,6 +107,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    color: $secondary-color;
+    background-color: $primary-color;
 
     .section-title {
       font-size: 26px;
