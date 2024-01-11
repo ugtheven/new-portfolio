@@ -2,14 +2,17 @@
 
 .container {
   @media (max-width: 768px) {
-    height: calc(100vh - 84px);
+    padding-top: 84px;
   }
-  height: calc(100vh - 92px);
+  padding-top: 92px;
   color: $primary-color;
 
   // Landing
   .landing {
-    height: 100%;
+    @media (max-width: 768px) {
+      height: calc(100vh - 84px);
+    }
+    height: calc(100vh - 92px);
     width: 100%;
 
     display: flex;
@@ -68,20 +71,47 @@
         opacity: 0.6;
       }
     }
-  }
 
-  // Waves
-  .wave-mobile {
-    width: 100%;
-    @media (min-width: 769px) {
-      display: none;
+    .wave-mobile {
+      width: 100%;
+      @media (min-width: 769px) {
+        display: none;
+      }
+    }
+  
+    .wave-desktop {
+      width: 100%;
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
 
-  .wave-desktop {
-    width: 100%;
+
+  .about-me {
     @media (max-width: 768px) {
-      display: none;
+      height: calc(100vh - 84px);
+    }
+    height: calc(100vh - 92px);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .section-title {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .section-text {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 24px;
+      text-align: center;
     }
   }
 }
