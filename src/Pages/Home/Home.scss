@@ -81,26 +81,9 @@
       }
     }
 
-    .wave-mobile {
-      width: 100%;
-      @media (min-width: 769px) {
-        display: none;
-      }
-    }
-
-    .wave-desktop {
-      width: 100%;
-      @media (max-width: 768px) {
-        display: none;
-      }
-    }
   }
 
   .about-me {
-    @media (max-width: 768px) {
-      height: calc(100vh - 84px);
-    }
-    height: calc(100vh - 92px);
     width: 100%;
 
     display: flex;
@@ -123,6 +106,21 @@
       font-weight: 400;
       margin-bottom: 24px;
       text-align: center;
+    }
+
+  }
+
+  .wave-mobile {
+    width: 100%;
+    @media (min-width: 769px) {
+      display: none;
+    }
+  }
+
+  .wave-desktop {
+    width: 100%;
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 }

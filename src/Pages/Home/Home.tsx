@@ -5,6 +5,8 @@ import waveDesktop from "../../assets/wave-desktop.png";
 import arrowDown from "../../assets/arrow-down.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
+import waveBlackMobile from "../../assets/wave-mobile-black.png";
+import waveBlackDesktop from "../../assets/wave-desktop-black.png";
 
 function Home() {
   return (
@@ -43,6 +45,8 @@ function Home() {
           J'ai une passion pour le développement web et la création d'interfaces
           utilisateur qui apportent de la valeur aux utilisateurs.
         </p>
+        <img src={waveBlackMobile} alt="wave" className="wave-mobile" />
+        <img src={waveBlackDesktop} alt="wave" className="wave-desktop" />
       </div>
     </div>
   );
