@@ -9,6 +9,11 @@ import waveBlackMobile from "../../assets/wave-mobile-black.png";
 import waveBlackDesktop from "../../assets/wave-desktop-black.png";
 
 function Home() {
+  const ScrollToNextSection = () => {
+    const aboutMe = document.querySelector(".about-me");
+    aboutMe?.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <div className="home-container">
       {/* Premiere section */}
@@ -30,7 +35,7 @@ function Home() {
             </a>
           </div>
 
-          <img src={arrowDown} alt="arrow down" className="more" />
+          <img src={arrowDown} alt="arrow down" className="more" onClick={ScrollToNextSection} />
         </div>
 
         <img src={waveMobile} alt="wave" className="wave-mobile" />
