@@ -9,6 +9,7 @@
 
   background-color: $secondary-color;
   color: $primary-variant;
+  border-top: rgba(255, 255, 255, 0.319) 1px solid;
 
   .title {
     padding-bottom: 8px;
@@ -59,7 +60,7 @@
 
     .infos {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
 
@@ -67,22 +68,6 @@
         padding: 0 8px 0 8px;
         color: $primary-color;
       }
-    }
-  }
-
-  .form {
-    padding: 0px 24px 24px 24px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-items: center;
     }
   }
 

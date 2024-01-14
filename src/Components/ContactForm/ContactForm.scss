@@ -1,2 +1,72 @@
-@import '../../_variables.scss';
+@import "../../_variables.scss";
 
+.form {
+  padding: 0px 24px 24px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+
+  form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    label {
+      color: $primary-variant;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    input {
+      margin: 0;
+      padding: 0;
+      
+      height: 24px;
+      width: 250px;
+    }
+
+    textarea {
+      margin: 0;
+      padding: 0;
+
+      width: 250px;
+    }
+
+    .submit-button {
+      height: 24px;
+      width: 250px;
+
+      border: none;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 16px;
+      font-weight: 600;
+      background-color: $primary-color;
+      color: $secondary-color;
+      cursor: pointer;
+      transition: 0.25s ease-in;
+
+      .submit-icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+      }
+    }
+
+    .menu-button {
+      display: none;
+    }
+
+    .mobile-button {
+      display: none;
+    }
+  }
+}
