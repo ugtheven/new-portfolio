@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="footer">
       {/* Socials links */}
       <div className="socials">
-        <span>MES RESEAUX</span>
+        <span className="title">MES RESEAUX</span>
         <div className="links">
           <a
             href="https://www.linkedin.com/in/ugo-theveny/"
@@ -28,7 +28,7 @@ const Footer = () => {
 
       {/* Contact */}
       <div className="contact">
-        <span>COMMENT ME JOINDRE ?</span>
+        <span className="title">COMMENT ME JOINDRE ?</span>
         <div className="infos">
           <div>
             <FaPhoneAlt className="social-icon" />
@@ -39,16 +39,20 @@ const Footer = () => {
             <span>06 34 44 49 37</span>
           </div>
         </div>
+      </div>
 
-        <div className="form">
+      {/* Form */}
+      <div className="form">
+        <span className="title">FORMULAIRE DE CONTACT</span>
+        {state.succeeded ? (
+          <p className="success-message">
+            Le formulaire a été envoyé avec succès !
+          </p>
+        ) : (
           <form onSubmit={handleSubmit}>
             <label htmlFor="email">Nom</label>
             <input id="name" type="name" name="name" />
-            <ValidationError
-              prefix="Name"
-              field="name"
-              errors={state.errors}
-            />
+            <ValidationError prefix="Name" field="name" errors={state.errors} />
 
             <label htmlFor="email">Email Address</label>
             <input id="email" type="email" name="email" />
@@ -69,7 +73,7 @@ const Footer = () => {
               Submit
             </button>
           </form>
-        </div>
+        )}
       </div>
 
       {/* "Copyright" */}
