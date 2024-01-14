@@ -3,8 +3,10 @@ import './Skills.scss';
 function Skills() {
 
   return (
-    <div className="container">
-      Competences
+    <div className="skills-container">
+      <div className="skills">
+        Competences
+      </div>
     </div>
     );
 }

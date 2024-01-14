@@ -3,8 +3,10 @@ import './Resume.scss';
 function Resume() {
 
   return (
-    <div className="container">
-      Experiences
+    <div className="resume-container">
+      <div className="resume">
+        Resume
+      </div>
     </div>
     );
 }

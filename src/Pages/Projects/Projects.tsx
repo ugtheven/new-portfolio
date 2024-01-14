@@ -1,12 +1,11 @@
-import './Projects.scss';
+import "./Projects.scss";
 
 function Projects() {
-
   return (
-    <div className="container">
-      Projets
+    <div className="projects-container">
+      <div className="projects">Projets</div>
     </div>
-    );
+  );
 }
 
 export default Projects;
