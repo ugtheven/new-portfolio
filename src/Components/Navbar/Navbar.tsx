@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="links">
         {/* Desktop Link 1 */}
         <NavLink className="desktop-link" to="/">
-          <FaHome />
+          Accueil
         </NavLink>
         {/* Desktop Link 2 */}
         <NavLink className="desktop-link" to="/resume">
