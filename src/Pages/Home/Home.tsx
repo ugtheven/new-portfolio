@@ -5,9 +5,9 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 
 function Home() {
-  const ScrollToNextSection = () => {
-    const aboutMe = document.querySelector(".footer");
-    aboutMe?.scrollIntoView({ behavior: "smooth" });
+  const ScrollToContactForm = () => {
+    const form = document.querySelector(".form");
+    form?.scrollIntoView({ behavior: "smooth" });
   }
 
   return (
@@ -31,7 +31,7 @@ function Home() {
             </a>
           </div>
 
-          <img src={arrowDown} alt="arrow down" className="more" onClick={ScrollToNextSection} />
+          <img src={arrowDown} alt="arrow down" className="more" onClick={ScrollToContactForm} />
         </div>
       </div>
     </div>

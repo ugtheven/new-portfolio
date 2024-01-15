@@ -31,6 +31,11 @@ const Navbar = () => {
     }
   }, [isMenuOpen]);
 
+  const ScrollToContactForm = () => {
+    const form = document.querySelector(".form");
+    form?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <header>
       {/* Logo */}
@@ -56,9 +61,9 @@ const Navbar = () => {
           Projets
         </NavLink>
         {/* Desktop Link 5 */}
-        <NavLink className="desktop-link" to="/contact">
+        <a className="desktop-link" onClick={ScrollToContactForm}>
           Contact
-        </NavLink>
+        </a>
       </div>
 
       {/* Download CV Button */}
@@ -109,10 +114,10 @@ const Navbar = () => {
                 <span>Projets</span>
               </NavLink>
               {/* Mobile Link 5 */}
-              <NavLink to="/contact" className="card">
+              <a onClick={ScrollToContactForm} className="card">
                 <FaEnvelopeOpenText className="link-icon" />
                 <span>Contact</span>
-              </NavLink>
+              </a>
               {/* Mobile Link 6 */}
               <a href="UgoTHEVENY_FR_CV.pdf" className="card">
                 <FaFileDownload className="link-icon" />

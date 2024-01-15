@@ -6,7 +6,7 @@ const ContactForm = () => {
   const [state, handleSubmit] = useForm("mbjnlkyp");
 
   return (
-    <div className="form">
+    <div className="form" id="contact-form">
       <span className="title">FORMULAIRE DE CONTACT</span>
       {state.succeeded ? (
         <div>
