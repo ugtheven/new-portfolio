@@ -18,7 +18,7 @@
     align-items: center;
 
     padding: 24px;
-    
+
     .project-type {
       background-color: rgb(37, 37, 37);
       width: fit-content;
@@ -26,11 +26,27 @@
       border-radius: 4px;
     }
 
+    .project-technologies {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .project-technology {
+        background-color: rgb(37, 37, 37);
+        width: fit-content;
+        padding: 4px 8px;
+        margin: 0 4px;
+        border-radius: 4px;
+      }
+    }
+
     .project-title {
       padding: 16px;
       font-size: 22px;
       font-weight: 500;
-      color: $primary-color
+      color: $primary-color;
     }
 
     .project-description {
@@ -38,7 +54,7 @@
 
       font-size: 16px;
       font-weight: 300;
-      color: $primary-variant
+      color: $primary-variant;
     }
 
     .project-links {
