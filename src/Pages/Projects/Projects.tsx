@@ -16,7 +16,6 @@ function Projects() {
   return (
     <div className="projects-container">
       <div className="projects">
-        {/* Project map */}
         {projects.map((project, index) => (
           <ProjectCard project={project} index={index} />
         ))}
