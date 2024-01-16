@@ -2,11 +2,12 @@ import "./ProjectCard.scss";
 import { FaExternalLinkAlt, FaGithubSquare } from "react-icons/fa";
 import { Project } from "../../Pages/Projects/Project.type";
 import "./ProjectCard.scss";
+import ImageCarousel from "../ImageCarousel/ImageCarousel";
 
-function ProjectCard({ project, index }: { project: Project; index: number }) {
+function ProjectCard({ project }: { project: Project; }) {
   return (
-    <div className="project-card" key={index}>
-      <img src={project.image} className="project-image" alt={project.title} />
+    <div className="project-card">
+      <ImageCarousel images={project.images} />
 
       <div className="content">
         <span className="project-type">{project.type}</span>

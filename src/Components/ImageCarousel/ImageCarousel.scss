@@ -1,0 +1,38 @@
+.carousel {
+  width: 100%;
+
+  .image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  .selectors {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+
+    .selector {
+      width: 10px;
+      height: 10px;
+      background-color: #ccc;
+      border-radius: 50%;
+      margin: 0 4px;
+      cursor: pointer;
+
+      &.active {
+        background-color: #333;
+      }
+    }
+  }
+}

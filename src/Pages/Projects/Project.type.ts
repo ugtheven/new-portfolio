@@ -2,7 +2,7 @@ export interface Project {
   title: string;
   description: string;
   type: string;
-  image: string;
+  images: string[];
   link: string;
   repository: string;
 }

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "./Projects.scss";
-import { FaExternalLinkAlt, FaGithubSquare } from "react-icons/fa";
 import { Project } from "./Project.type";
 import ProjectCard from "../../Components/ProjectCard/ProjectCard";
 
@@ -17,7 +16,7 @@ function Projects() {
     <div className="projects-container">
       <div className="projects">
         {projects.map((project, index) => (
-          <ProjectCard project={project} index={index} />
+          <ProjectCard project={project} key={index} />
         ))}
       </div>
     </div>
