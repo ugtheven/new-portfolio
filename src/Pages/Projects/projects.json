@@ -2,7 +2,7 @@
   {
     "title": "new-portfolio",
     "type": "Projet personnel",
-    "description": "Dans le cadre de ma recherche d'emploi et afin de montrer mes competences nouvellement acquises lors de mon stage, j'ai decidé de refaire mon portfolio toujours sous la forme d'une single page application.\n\nPour ce projet j'ai choisi d'utiliser ReactJS+Vite avec TypeScript et de faire mes composants from scratch sans l'aide de librairies.\n\nCe projet est composé de 4 pages:\n- Une page d'accueil\n- Une page relatant mes experiences.\n- Une page detaillant mes competences\n-Une page rassemblant mes projets\n",
+    "description": "Dans le cadre de ma recherche d'emploi et afin de montrer mes competences nouvellement acquises lors de mon stage, j'ai decidé de refaire mon portfolio toujours sous la forme d'une single page application.\n\nPour ce projet j'ai choisi d'utiliser ReactJS+Vite avec Typescript et de faire mes composants from scratch sans l'aide de librairies.\n\nCe projet est composé de 4 pages:\n- Une page d'accueil\n- Une page relatant mes experiences.\n- Une page detaillant mes competences\n-Une page rassemblant mes projets\n",
     "images": [
       "new-portfolio.png",
       "new-portfolio.png",
@@ -11,21 +11,21 @@
     "link": "https://ugtheven.com/",
     "repository": "https://github.com/ugtheven/new-portfolio",
     "technologies": [
-      "TypeScript",
+      "Typescript",
       "ReactJS"
     ]
   },
   {
     "title": "my-gpt",
     "type": "Projet personnel",
-    "description": "Réalisation d'un clone de l'interface de ChatGPT d'OpenAI utilisant leur API.\n\nPour ce projet, j'ai utiliser ReactJS+Vite avec TypeScript ainsi Redux pour la gestion de l'état.\nPour la suite de ce projet, je vais également ajouter un backend NestJS et une base de donnée afin de pouvoir conserver les conversations et changer d'une a l'autre.\n\n",
+    "description": "Réalisation d'un clone de l'interface de ChatGPT d'OpenAI utilisant leur API.\n\nPour ce projet, j'ai utiliser ReactJS+Vite avec Typescript ainsi Redux pour la gestion de l'état.\nPour la suite de ce projet, je vais également ajouter un backend NestJS et une base de donnée afin de pouvoir conserver les conversations et changer d'une a l'autre.\n\n",
     "images": [
       "my-gpt.png"
     ],
     "link": "",
     "repository": "https://github.com/ugtheven/mygpt",
     "technologies": [
-      "TypeScript",
+      "Typescript",
       "ReactJS",
       "Redux"
     ]
@@ -40,7 +40,7 @@
     "link": "",
     "repository": "",
     "technologies": [
-      "TypeScript",
+      "Typescript",
       "Angular"
     ]
   },
@@ -54,10 +54,10 @@
     "link": "",
     "repository": "",
     "technologies": [
-      "TypeScript",
+      "Typescript",
       "Angular",
       "NestJS",
-      "Prisma"
+      "PostgreSQL"
     ]
   }
 ]

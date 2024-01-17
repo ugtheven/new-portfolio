@@ -9,23 +9,23 @@ import reactLogo from "../../assets/react.png";
 import reduxLogo from "../../assets/redux.png";
 import nestLogo from "../../assets/nest.png";
 import tsLogo from "../../assets/ts.png";
-import prismaLogo from "../../assets/prisma.png";
 import angularLogo from "../../assets/angular.png";
+import postgresLogo from "../../assets/postgres.png";
 import school from "../../assets/42.png";
 import personnal from "../../assets/personnal.png";
 
 const techIcons: { [key: string]: string } = {
-  reactjs: reactLogo,
-  redux: reduxLogo,
-  nestjs: nestLogo,
-  typescript: tsLogo,
-  prisma: prismaLogo,
-  angular: angularLogo,
+  ReactJS: reactLogo,
+  Redux: reduxLogo,
+  NestJS: nestLogo,
+  Typescript: tsLogo,
+  Angular: angularLogo,
+  PostgreSQL: postgresLogo,
 };
 
 function ProjectCard({ project }: { project: Project }) {
   function selectTechIcon(technology: string) {
-    const techKey = technology.toLowerCase();
+    const techKey = technology;
     return techIcons[techKey];
   }
 
