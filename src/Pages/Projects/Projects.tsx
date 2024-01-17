@@ -15,6 +15,7 @@ function Projects() {
   return (
     <div className="projects-container">
       <div className="projects">
+        <h1 className="title">MES PROJETS</h1>
         {projects.map((project, index) => (
           <ProjectCard project={project} key={index} />
         ))}

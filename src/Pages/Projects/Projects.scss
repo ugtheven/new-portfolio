@@ -1,3 +1,5 @@
+@import "../../_variables.scss";
+
 .projects-container {
   @media (max-width: 768px) {
     padding-top: 84px;
@@ -7,5 +9,19 @@
   .projects {
     width: calc(100% - 48px);
     margin: 0 24px 0 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      margin-bottom: 24px;
+      padding: 8px 24px 8px 24px;
+
+      font-size: 32px;
+      font-weight: 600;
+      color: $primary-color;
+    }
   }
 }
