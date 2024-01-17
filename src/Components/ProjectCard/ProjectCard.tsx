@@ -4,23 +4,61 @@ import { Project } from "../../Pages/Projects/Project.type";
 import "./ProjectCard.scss";
 import ImageCarousel from "../ImageCarousel/ImageCarousel";
 
+// Assets
+import reactLogo from "../../assets/react.png";
+import reduxLogo from "../../assets/redux.png";
+import nestLogo from "../../assets/nest.png";
+import tsLogo from "../../assets/ts.png";
+import prismaLogo from "../../assets/prisma.png";
+import angularLogo from "../../assets/angular.png";
+import school from "../../assets/42.png";
+import personnal from "../../assets/personnal.png";
+
+const techIcons: { [key: string]: string } = {
+  reactjs: reactLogo,
+  redux: reduxLogo,
+  nestjs: nestLogo,
+  typescript: tsLogo,
+  prisma: prismaLogo,
+  angular: angularLogo,
+};
+
 function ProjectCard({ project }: { project: Project }) {
+  function selectTechIcon(technology: string) {
+    const techKey = technology.toLowerCase();
+    return techIcons[techKey];
+  }
+
   return (
     <div className="project-card">
       {/* Carousel */}
       <ImageCarousel images={project.images} />
 
       <div className="content">
-        {/* Type badge */}
-        <span className="project-type">{project.type}</span>
+        {/* Badges */}
+        <div className="header">
+          {/* Type badge */}
+          <span className="project-type">
+            {project.type === "Projet personnel" ? (
+              <img src={personnal} alt="personnal" className="icon" />
+            ) : (
+              <img src={school} alt="school" className="icon" />
+            )}
+            {project.type}
+          </span>
 
-        {/* Technologies */}
-        <div className="project-technologies">
-          {project.technologies.map((technology, index) => (
-            <span key={index} className="project-technology">
-              {technology}
-            </span>
-          ))}
+          {/* Technologies badges */}
+          <div className="technologies">
+            {project.technologies.map((technology, index) => (
+              <span key={index} className="technology">
+                <img
+                  src={selectTechIcon(technology)}
+                  alt={technology}
+                  className="icon"
+                />
+              </span>
+            ))}
+          </div>
         </div>
 
         {/* Title and description */}

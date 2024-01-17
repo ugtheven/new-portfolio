@@ -19,26 +19,51 @@
 
     padding: 24px;
 
-    .project-type {
-      background-color: rgb(37, 37, 37);
-      width: fit-content;
-      padding: 4px 8px;
-      border-radius: 4px;
-    }
-
-    .project-technologies {
-      margin-top: 16px;
+    .header {
       display: flex;
       flex-direction: row;
-      justify-content: center;
       align-items: center;
 
-      .project-technology {
+      .project-type {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
         background-color: rgb(37, 37, 37);
         width: fit-content;
         padding: 4px 8px;
-        margin: 0 4px;
+        margin-right: 8px;
         border-radius: 4px;
+
+        .icon {
+          width: 16px;
+          height: 16px;
+
+          margin-right: 8px;
+        }
+      }
+
+      .technologies {
+        display: flex;
+
+        .technology {
+          background-color: rgb(37, 37, 37);
+          width: fit-content;
+          padding: 4px 8px;
+          margin: 0 4px;
+          border-radius: 4px;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          .icon {
+            width: 19px;
+            height: 19px;
+          }
+        }
       }
     }
 
