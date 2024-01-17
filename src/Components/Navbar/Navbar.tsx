@@ -38,46 +38,50 @@ const Navbar = () => {
 
   return (
     <header>
-      {/* Logo */}
-      <NavLink to="/">
-        <img src={logo} alt="Logo" className="logo" />
-      </NavLink>
+      <div className="content">
+        {/* Logo */}
+        <NavLink to="/">
+          <img src={logo} alt="Logo" className="logo" />
+        </NavLink>
 
-      <div className="links">
-        {/* Desktop Link 1 */}
-        <NavLink className="desktop-link" to="/">
-          Accueil
-        </NavLink>
-        {/* Desktop Link 2 */}
-        <NavLink className="desktop-link" to="/resume">
-          Experiences
-        </NavLink>
-        {/* Desktop Link 3 */}
-        <NavLink className="desktop-link" to="/skills">
-          Competences
-        </NavLink>
-        {/* Desktop Link 4 */}
-        <NavLink className="desktop-link" to="/projects">
-          Projets
-        </NavLink>
-        {/* Desktop Link 5 */}
-        <a className="desktop-link" onClick={ScrollToContactForm}>
-          Contact
+        <div className="links">
+          {/* Desktop Link 1 */}
+          <NavLink className="desktop-link" to="/">
+            Accueil
+          </NavLink>
+          {/* Desktop Link 2 */}
+          <NavLink className="desktop-link" to="/resume">
+            Experiences
+          </NavLink>
+          {/* Desktop Link 3 */}
+          <NavLink className="desktop-link" to="/skills">
+            Competences
+          </NavLink>
+          {/* Desktop Link 4 */}
+          <NavLink className="desktop-link" to="/projects">
+            Projets
+          </NavLink>
+          {/* Desktop Link 5 */}
+          <a className="desktop-link" onClick={ScrollToContactForm}>
+            Contact
+          </a>
+        </div>
+
+        {/* Download CV Button */}
+        <a href="UgoTHEVENY_FR_CV.pdf" className="download-button">
+          <FaFileDownload className="download-icon" />
+          <span>CV</span>
         </a>
-      </div>
 
-      {/* Download CV Button */}
-      <a href="UgoTHEVENY_FR_CV.pdf" className="download-button">
-        <FaFileDownload className="download-icon" />
-        <span>CV</span>
-      </a>
-
-      {/* Hamburger Button */}
-      <div
-        className={`menu-button ${isMenuOpen && menuAnimation ? "" : "rotate"}`}
-        onClick={() => setIsMenuOpen(true)}
-      >
-        <RiMenuUnfoldFill className="menu-icon" />
+        {/* Hamburger Button */}
+        <div
+          className={`menu-button ${
+            isMenuOpen && menuAnimation ? "" : "rotate"
+          }`}
+          onClick={() => setIsMenuOpen(true)}
+        >
+          <RiMenuUnfoldFill className="menu-icon" />
+        </div>
       </div>
 
       {/* Mobile menu */}
