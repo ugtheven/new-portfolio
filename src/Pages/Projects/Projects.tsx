@@ -27,17 +27,18 @@ function Projects() {
     []
   );
 
-  function handleFilter(technology: string) {
-    if (technology === "Tous") {
+  function handleFilter(clickedTechnology: string) {
+    if (clickedTechnology === "Tous") {
       setSelectedTechnologies([]);
       return;
     }
-    if (selectedTechnologies.includes(technology)) {
-      setSelectedTechnologies((prevFilters) =>
-        prevFilters.filter((filter) => filter !== technology)
+    if (selectedTechnologies.includes(clickedTechnology)) {
+      setSelectedTechnologies((selectedTechs) =>
+        selectedTechs.filter((selectedTech) => selectedTech !== clickedTechnology)
       );
-    } else {
-      setSelectedTechnologies((prevFilters) => [...prevFilters, technology]);
+    }
+    else {
+      setSelectedTechnologies((selectedTechs) => [...selectedTechs, clickedTechnology]);
     }
   }
 
@@ -48,10 +49,6 @@ function Projects() {
       }
     );
   }
-
-  useEffect(() => {
-    console.log(selectedTechnologies);
-  }, [selectedTechnologies]);
 
   useEffect(() => {
     import("./projects.json").then((data) => {
