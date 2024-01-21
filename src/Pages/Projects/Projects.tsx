@@ -85,7 +85,11 @@ function Projects() {
               className={`filter selected`}
               key={index}
             >
-              <img src={techIcons[tech]} alt={tech} className="icon tech-icon" />
+              <img
+                src={techIcons[tech]}
+                alt={tech}
+                className="icon tech-icon"
+              />
               <span>{tech}</span>
             </button>
           ))}
@@ -99,7 +103,11 @@ function Projects() {
                   className={`filter`}
                   key={index}
                 >
-                  <img src={techIcons[tech]} alt={tech} className="icon tech-icon" />
+                  <img
+                    src={techIcons[tech]}
+                    alt={tech}
+                    className="icon tech-icon"
+                  />
                   <span>{tech}</span>
                 </button>
               )
@@ -107,15 +115,27 @@ function Projects() {
         </div>
 
         {/* Projects */}
-        {projects
-          .filter(
-            (project) =>
-              selectedTechnologies.length === 0 ||
-              checkFilters(project.technologies)
-          )
-          .map((project, index) => (
-            <ProjectCard project={project} key={index} />
-          ))}
+        <div className="project-cards">
+          {/* Projects found */}
+          {projects
+            .filter(
+              (project) =>
+                selectedTechnologies.length === 0 ||
+                checkFilters(project.technologies)
+            )
+            .map((project, index) => (
+              <ProjectCard project={project} key={index} />
+            ))}
+          {/* No projects found */}
+          {projects
+            .filter(
+              (project) =>
+                selectedTechnologies.length === 0 ||
+                checkFilters(project.technologies)
+          ).length === 0 && (
+            <p>Aucun résultat correspondant à votre recherche.</p>
+          )}
+        </div>
       </div>
     </div>
   );

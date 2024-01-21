@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import {
   BrowserRouter as Router,
   Routes,
-  Route /*, Navigate*/,
+  Route,
 } from "react-router-dom";
 import "./index.scss";
 import App from "./App";
