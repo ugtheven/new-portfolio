@@ -34,20 +34,23 @@ function Projects() {
     }
     if (selectedTechnologies.includes(clickedTechnology)) {
       setSelectedTechnologies((selectedTechs) =>
-        selectedTechs.filter((selectedTech) => selectedTech !== clickedTechnology)
+        selectedTechs.filter(
+          (selectedTech) => selectedTech !== clickedTechnology
+        )
       );
-    }
-    else {
-      setSelectedTechnologies((selectedTechs) => [...selectedTechs, clickedTechnology]);
+    } else {
+      setSelectedTechnologies((selectedTechs) => [
+        ...selectedTechs,
+        clickedTechnology,
+      ]);
     }
   }
 
   function checkFilters(technologies: string[]) {
     return selectedTechnologies.every((tech) => {
-      console.log('', tech, technologies);
-      return technologies.includes(tech)
-      }
-    );
+      console.log("", tech, technologies);
+      return technologies.includes(tech);
+    });
   }
 
   useEffect(() => {
@@ -75,19 +78,32 @@ function Projects() {
             <span>Tous</span>
           </button>
 
-          {/* Other options */}
-          {Object.keys(techIcons).map((tech, index) => (
+          {/* Selected filters */}
+          {selectedTechnologies.map((tech, index) => (
             <button
               onClick={() => handleFilter(tech)}
-              className={`filter ${
-                selectedTechnologies.includes(tech) ? "selected" : ""
-              }`}
+              className={`filter selected`}
               key={index}
             >
-              <img src={techIcons[tech]} alt={tech} className="icon" />
+              <img src={techIcons[tech]} alt={tech} className="icon tech-icon" />
               <span>{tech}</span>
             </button>
           ))}
+
+          {/* Other options */}
+          {Object.keys(techIcons).map(
+            (tech, index) =>
+              !selectedTechnologies.includes(tech) && (
+                <button
+                  onClick={() => handleFilter(tech)}
+                  className={`filter`}
+                  key={index}
+                >
+                  <img src={techIcons[tech]} alt={tech} className="icon tech-icon" />
+                  <span>{tech}</span>
+                </button>
+              )
+          )}
         </div>
 
         {/* Projects */}
