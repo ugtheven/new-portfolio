@@ -4,9 +4,8 @@
     "type": "Projet personnel",
     "description": "Dans le cadre de ma recherche d'emploi et afin de montrer mes competences nouvellement acquises lors de mon stage, j'ai decidé de refaire mon portfolio toujours sous la forme d'une single page application.\n\nPour ce projet j'ai choisi d'utiliser ReactJS+Vite avec Typescript et de faire mes composants from scratch sans l'aide de librairies.\n\nCe projet est composé de 4 pages:\n- Une page d'accueil\n- Une page relatant mes experiences.\n- Une page detaillant mes competences\n-Une page rassemblant mes projets\n",
     "images": [
-      "new-portfolio.png",
-      "new-portfolio.png",
-      "new-portfolio.png"
+      "new-portfolio-1.png",
+      "new-portfolio-2.png"
     ],
     "link": "https://ugtheven.com/",
     "repository": "https://github.com/ugtheven/new-portfolio",
@@ -35,7 +34,8 @@
     "type": "Projet personnel",
     "description": "A la suite de mon projet scolaire final et dans le cadre de la recherche de mon premier stage, j'avais decidé de faire mon CV sous forme de single page application a l'aide d'Angular\n\nPour se faire, j'avais reproduit l'interface graphique de l'outil Visual Studio Code.\nChaque onglet representait une rubrique de mon CV et pouvait etre ouvert et fermé.\nLorsqu'un onglet etait ouvert une fois, il rentrait dans les onglets actifs. Il etait alors possible d'ouvrir plusieurs onglets en meme temps.\n\nJ'avais également implementer la possibilité de changer de langue entre le francais et l'anglais, avec le recul que j'ai aujourd'hui, la méthode utilisée n'été pas très propre.",
     "images": [
-      "old-portfolio.png"
+      "old-portfolio-1.png",
+      "old-portfolio-2.png"
     ],
     "link": "",
     "repository": "",
@@ -49,7 +49,10 @@
     "type": "Projet scolaire",
     "description": "Ce projet etait le projet final du cursus de 42.\nIl consistait dans la creation d'un jeu de Pong multijoueur sous la forme d'une single page application.\n\nCe projet devait etre realisé en groupe de 4 dans lequelle j'ai majoritairement travaillé sur la partie front-end ainsi que la maquette Figma.\n\nLa stack technique que nous avons utilisé etaient composé d'Angular et de NestJS couplé a Prisma pour communiquer avec notre base de données.\nNiveau devops, le sujet nous imposait l'utilisation d'un Makefile et de Docker, nous avons donc separé notre application en 3 containers:\n- Un pour la base de données\n- Un pour le front-end Angular\n- Un pour le back-end NestJS\n\nNotre jeu en ligne devait obligatoirement comprendre plusieurs fonctionnalitées:\n- L'affichage des données en temps réel (Utilisation de sockets)\n- Un systeme d'authentification\n- Un systeme de matchmaking\n- Un profil incluant des statistiques sur l’utilisateur\n- Un historique des parties associés a chaque utilisateur\n- Un chat permettant de creer des salons privées et de s'inviter en partie",
     "images": [
-      "42transcendence.png"
+      "42transcendence-1.png",
+      "42transcendence-2.png",
+      "42transcendence-3.png",
+      "42transcendence-4.png"
     ],
     "link": "",
     "repository": "",
