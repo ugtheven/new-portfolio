@@ -1,10 +1,23 @@
-# new-portfolio
+# A Portfolio for a Front-end Developer
 
-Ce projet a pour objectif de présenter mes compétences, mes projets et mon parcours en tant que développeur front-end spécialisé en React.
+This project aims to showcase my skills, projects, and journey as a front-end developer specialized in React.
 
 ---
 
-## 🚀 Stack technique
+## 🚀 Stack
 
-* React (Vite)
-* Tailwind
+* React
+* Vite
+* Tailwind CSS
+* Biome
+
+---
+
+## 📦 Installation
+
+```bash id="p4k2d8"
+git clone [repository-url]
+cd portfolio
+npm install
+npm run dev
+```
