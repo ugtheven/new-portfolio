@@ -1,16 +1,13 @@
 const fr = {
-	navbar: {
-		changeLanguage: "Changer de langue",
-		switchTheme: "Changer de thème",
+	github: {
+		commits: "contributions cette année",
+		commit_one: "{{count}} commit",
+		commit_other: "{{count}} commits",
+		less: "Moins",
+		more: "Plus",
 	},
-	sections: {
-		hero: "Héro",
-		projectMain: "Projet",
-		projectSecondary: "Projet",
+sections: {
 		github: "GitHub",
-		stack: "Stack",
-		about: "À propos",
-		contact: "Contact",
 	},
 } as const;
 

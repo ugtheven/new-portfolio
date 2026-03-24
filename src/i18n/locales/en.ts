@@ -1,16 +1,13 @@
 const en = {
-	navbar: {
-		changeLanguage: "Change Language",
-		switchTheme: "Switch Theme",
+	github: {
+		commits: "contributions in the last year",
+		commit_one: "{{count}} commit",
+		commit_other: "{{count}} commits",
+		less: "Less",
+		more: "More",
 	},
-	sections: {
-		hero: "Hero",
-		projectMain: "Project",
-		projectSecondary: "Project",
+sections: {
 		github: "GitHub",
-		stack: "Stack",
-		about: "About",
-		contact: "Contact",
 	},
 } as const;
 
